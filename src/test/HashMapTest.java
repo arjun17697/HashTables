@@ -61,9 +61,10 @@ public class HashMapTest {
 				value = value + 1;
 			myLinkedHashMap.addMap(word, value);
 		}
-		int frequency = myLinkedHashMap.getMap("paranoid");
-		System.out.println(myLinkedHashMap);
-		Assert.assertEquals(3, frequency);
+		myLinkedHashMap.removeKey("avoidable");
+		assertNull(myLinkedHashMap.getMap("avoidable"));
 	}
+
 }
+
 	
